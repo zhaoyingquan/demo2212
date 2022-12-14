@@ -1,0 +1,4 @@
+FROM openjdk:11
+EXPOSE 8765
+COPY demo2212.jar /springboot.jar
+ENTRYPOINT ["java","-jar","/springboot.jar"]
