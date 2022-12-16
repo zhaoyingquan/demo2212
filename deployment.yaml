@@ -17,7 +17,7 @@ spec:
       containers:
       - name: demo2212
         image: 
-          IMAGE_PATH
+          localhost:32000/demo2212
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
