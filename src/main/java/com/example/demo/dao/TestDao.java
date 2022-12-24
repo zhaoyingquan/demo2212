@@ -9,7 +9,8 @@ public class TestDao {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    public int count() {
+    public int count() throws InterruptedException {
+        Thread.sleep(3000);
         String sql = "select count(*) from Users";
         return this.jdbcTemplate.queryForObject(sql,Integer.class);
     }

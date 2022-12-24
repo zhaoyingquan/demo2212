@@ -13,6 +13,11 @@ public class TestController {
     TestDao testDao;
     @RequestMapping(method = RequestMethod.GET,value = "/")
     public int test(){
-        return testDao.count();
+        try {
+            return testDao.count();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 }
