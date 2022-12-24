@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: demo2212
-        image:
+        image: 
           localhost:32000/demo2212
         imagePullPolicy: IfNotPresent
         ports:
